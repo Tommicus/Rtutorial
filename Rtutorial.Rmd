@@ -47,7 +47,6 @@ knitr::kable(mycorrnumbers)
 ```{r, echo=FALSE}
 
 tmp = t(apply(firstrows[1:3,], 1, summary))
-tmp
 knitr::kable(tmp)
 
 ```
@@ -59,7 +58,6 @@ Apply my own function
 
 
 tmp = t(apply(firstrows, 2, myfunction))
-tmp
 knitr::kable(tmp)
 
 ```
