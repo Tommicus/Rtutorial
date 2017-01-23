@@ -7,6 +7,10 @@ output: html_document
 
 ## Introduction
 
+```{r, echo=FALSE}
+source("helpers.R")
+
+```
 
 This is the data description...
 
@@ -51,10 +55,8 @@ knitr::kable(tmp)
 
 Apply my own function
 
-```{r, echo=FALSE, eval=TRUE}
-myfunction <- function(inputvar){
-  sum(inputvar[1:2])
-}
+```{r, echo=FALSE}
+
 
 tmp = t(apply(firstrows, 2, myfunction))
 tmp
